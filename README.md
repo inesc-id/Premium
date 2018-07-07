@@ -10,7 +10,7 @@ For this guide we will need 5 virtual machines to simulate 5 distributed compone
 
  * [VirtualBox](https://www.virtualbox.org)
 
-### Installing
+### Instalation and set-up
 
 The following instructions should be followed using the virtual machines previously created. A guide that describes how to set the virtual machines can be found [here](doc/VIRTUALBOX-GUIDE.md).
 
