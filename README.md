@@ -125,8 +125,8 @@ $ bmon
 
 
 * **Isabel Costa** - *Development of the PREMIUM middleware*
-* **Diogo Raposo** - *Development of the MACHETE middleware* - [MACHETE](https://github.com/inesc-id/MACHETE)
-* **Karan Balu** - *Development of the Darshana middleware* - [Darshana](https://github.com/inesc-id/darshana)
+* **Diogo Raposo** - *Development of the [MACHETE](https://github.com/inesc-id/MACHETE) middleware*
+* **Karan Balu** - *Development of the [Darshana](https://github.com/inesc-id/darshana) middleware*
 
 ## License
 
