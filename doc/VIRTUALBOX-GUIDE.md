@@ -1,4 +1,4 @@
-#Creating a Virtual Machine
+# Creating a Virtual Machine
 
 In this tutorial we will describe how to run a demonstration example of PREMIUM using [Virtual Box](https://www.virtualbox.org). For this guide we will need 5 virtual machines to simulate 5 distributed components of MACHETE: a sender, a receiver, a multipath manager to store information about the network and two overlay nodes to forward traffic through different routes. The virtual machines use this [virtual disk](http://www.gsd.inesc-id.pt/~dmatos/safe-cloud/MACHETE_Debian_8.6_Jessie.zip).
 
