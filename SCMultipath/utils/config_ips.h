@@ -1,0 +1,8 @@
+#ifndef IP_CONFIG_
+#define IP_CONFIG_
+
+#define STUN_SERVER_IP "66.102.1.127" 
+#define STUN_SERVER_PORT 19302
+#define STUN_SERVER_SOCKET_LOCAL_PORT 8888
+
+#endif

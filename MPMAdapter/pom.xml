@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>pt.inesc-id</groupId>
+	<artifactId>MPMAdapter</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>MACHETE MPM Adapter</name>
+	<description>Relay commands to the Multi-path Manager</description>
+
+	<properties>
+
+
+
+		<mainClass>pt.inescid.mpmadapter.MPMAdapter</mainClass>
+
+		<adapter.port>7892</adapter.port>
+		<config.dir>/config</config.dir>
+		<client.id>6</client.id>
+		<tuple.space.name>Demo Space</tuple.space.name>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.depspace</groupId>
+			<artifactId>depspacito</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<!-- JUnit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Required for BFT-SMaRt -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+			<scope>runtime</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>exec-maven-plugin</artifactId>
+					<version>1.5.0</version>
+					<executions>
+						<execution>
+							<goals>
+								<goal>java</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<!-- to prevent deprecation warning: -->
+						<killAfter>-1</killAfter>
+						<mainClass>${mainClass}</mainClass>
+						<arguments>
+							<argument>${adapter.port}</argument>
+							<argument>${config.dir}</argument>
+							<argument>${client.id}</argument>
+							<argument>${tuple.space.name}</argument>
+						</arguments>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+</project>

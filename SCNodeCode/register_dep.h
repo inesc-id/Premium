@@ -8,6 +8,6 @@
 #ifndef REGISTER_DEP_H_
 #define REGISTER_DEP_H_
 
-int registerDep(char *server, int serverport, int num_interfaces, char **interfaces, int type);
+int registerDep(char *manager_proxy_addr, int manager_proxy_port, char *primary_addr);
 
 #endif /* REGISTER_DEP_H_ */

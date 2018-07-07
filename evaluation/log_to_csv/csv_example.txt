@@ -1,0 +1,30 @@
+-> <--------- Setup Phase --------
+-> Getting Overlay Nodes from Manager time = 79 ms
+-> ### Number of hops returned from Manager = 2
+-> Probing Overlay Nodes time = 751 ms
+-> ### Number of responsive hops = 2
+-> Getting Receiver's info time = 65 ms
+-> ### Setup for node 10.142.0.2
+-> Setup sender forward rules time = 8 ms
+-> Setup node's forward rules time = 96 ms
+-> Setup node's darshana time = 179 ms
+-> Setup nodes time = 370 ms
+-> Setup sender path monitoring time = 1 ms
+-> ### Setup for node 10.166.0.4
+-> Setup sender forward rules time = 6 ms
+-> Setup node's forward rules time = 0 ms
+-> Setup node's darshana time = 17 ms
+-> Setup nodes time = 19 ms
+-> Setup sender path monitoring time = 1 ms
+-> Setup all flows time = 405 ms
+-> Setup time = 1304 ms
+-> <--------- Connection Phase --------
+-> Connection duration time = 6510 ms
+-> <-------- Teardown Phase --------
+-> Setup node's forward rules time = 93 ms
+-> Setup node's darshana time = 232 ms
+-> Setup node's forward rules time = 0 ms
+-> Setup node's darshana time = 18 ms
+-> Teardown nodes time = 439 ms
+-> Teardown device time = 56 ms
+-> Teardown time = 496 ms

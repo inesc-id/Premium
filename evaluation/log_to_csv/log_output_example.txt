@@ -1,0 +1,33 @@
+-> <---------- Begin logging PREMIUM ----------- 
+-> <--------- Setup Phase -------- 
+-> Getting Overlay Nodes from Manager time = 160 ms
+-> ### Number of hops returned from Manager = 2
+-> Probing Overlay Nodes time = 1003 ms
+-> ### Number of responsive hops = 2
+-> Getting Receiver's info time = 133 ms
+-> ### Setup for node 10.0.2.26
+-> Setup sender forward rules time = 12 ms
+-> Setup node's forward rules time = 0 ms
+-> Setup node's darshana time = 54 ms
+-> Setup nodes time = 55 ms
+-> Setup sender path monitoring time = 0 ms
+-> ### Setup for node 10.0.2.22
+-> Setup sender forward rules time = 17 ms
+-> Setup node's forward rules time = 0 ms
+-> Setup node's darshana time = 8 ms
+-> Setup nodes time = 9 ms
+-> Setup sender path monitoring time = 0 ms
+-> Setup all flows time = 93 ms
+-> Setup time = 1390 ms
+-> <--------- Connection Phase -------- 
+-> Connection duration time = 5898 ms
+-> <-------- Teardown Phase -------- 
+-> Setup node's forward rules time = 0 ms
+-> Setup node's darshana time = 83 ms
+-> Setup node's forward rules time = 1 ms
+-> Setup node's darshana time = 109 ms
+-> Teardown nodes time = 194 ms
+-> Teardown device time = 148 ms
+-> Teardown time = 344 ms
+-> <------------------------------ 
+-> <---------- Ending logging PREMIUM ----------- 

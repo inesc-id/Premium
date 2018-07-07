@@ -1,0 +1,19 @@
+<!-- Small Apache Ant project to wait for a server to become available -->
+<!-- Properties can be overriden in console using -D option            -->
+<!--                                                                   -->
+<!-- Example shell call, redefining port and with suppressed output:   -->
+<!-- ant -f waitforserver.xml -Dport=11000 >/dev/null 2>&1             -->
+<!--                                                                   -->
+<project name="waitforserver" default="main">
+    <property name="host" value="127.0.0.1" />
+    <property name="port" value="7892" />
+    <property name="maxwait" value="30" />
+
+    <target name="main">
+        <echo message="Waiting for server ${host}:${port}..." />
+        <waitfor maxwait="${maxwait}" maxwaitunit="second">
+            <socket server="${host}" port="${port}"/>
+        </waitfor>
+        <echo message="Server up!" />
+    </target>
+</project>

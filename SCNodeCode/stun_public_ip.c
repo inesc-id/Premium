@@ -10,7 +10,9 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/socket.h>
+#include <arpa/inet.h>
 #include <netinet/in.h>
+#include "config_ips.h"
 #include "stun_public_ip.h"
 #include "debug.h"
 
@@ -31,9 +33,9 @@ int stunGetPublicIP(char *return_ip_port, char *localaddr2)
 	short n;
 
 	//Default connecting server is stun.l.google.com 1
-	char * stun_server_ip = "64.233.184.127";
-	short stun_server_port = 19302;
-	short local_port = 8888;
+	char * stun_server_ip = STUN_SERVER_IP;
+	short stun_server_port = STUN_SERVER_PORT;
+	short local_port = STUN_SERVER_SOCKET_LOCAL_PORT;
 
 	sockfd = socket(AF_INET, SOCK_DGRAM, 0); // UDP
 	bzero(&servaddr, sizeof(servaddr));

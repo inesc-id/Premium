@@ -8,20 +8,50 @@
 #ifndef SENDING_HANDLER_H_
 #define SENDING_HANDLER_H_
 
-void getLocalInterfaces();
+#include "premium_specs.h"
 
-void sendRuleToHop(char *src, char *dst, char* hop, int port, int type);
+/*
+ * Darshana Alert Receiver structure
+ */
+typedef struct darshana_alert_receiver_info {
+	char *dar_ip;
+	int dar_port;
 
-void createVirtualInterface(int addition);
+} darshana_alert_receiver_info;
 
-void cleanVirtualInterfaces();
+/*
+ * setup MACHETE Sender arguments structure
+ */
+typedef struct setup_sender_arg {
+    char* receiver_addr;
+    int receiver_port;
+    char* depspace_proxy_addr; 
+    int depspace_proxy_port; 
+    int overlay_port;
+    int min_number_of_nodes; 
+    int use_stun_server;
+    machete_reaction reaction_spec;
+    int max_dar_alerts;
 
-int setSendingRules(int port);
+} setup_sender_arg;
 
-void cleanRules(int port);
 
-int sendFile(char* address, int port, char* filename);
+void reserve_memory_for_structures();
 
-int send_handler(char* address, int port, char* filename);
+void setup_machete_info();
+
+int setup_each_flow(int overlay_port, 
+                      int receiver_port, 
+                      int use_stun_server);
+
+void clean_rules(int overlay_port, 
+                 int receiver_port, 
+                 int use_stun_server);
+
+int setup_sender(setup_sender_arg *argument);
+
+void teardown_sender();
+
+void handle_dar_signal(int signal);
 
 #endif /* SENDING_HANDLER_H_ */
