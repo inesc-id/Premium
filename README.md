@@ -134,6 +134,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
+* **[Isabel Costa](https://github.com/isabelcosta)**
 * **[Prof. Miguel Correia](https://github.com/mpcorreia)** 
 * **[Prof. Miguel Pardal](https://github.com/miguelpardal)** 
 * **[David Matos](https://github.com/davidmatos)** 
