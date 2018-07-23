@@ -1,6 +1,25 @@
 # PREMIUM
-SafeCloud route-aware channels. The SafeCloud project developed security solutions intended to be secure even against powerful, motivated and well-funded adversaries.
 
+**PREMIUM** stands for **P**rivate **RE**active **M**ult**I**path comm**U**nication **M**iddleware
+
+PREMIUM provides a mechanism to split network traffic among multiple paths, and is able to react in near real-time to hijacking attacks. 
+The solution uses two components: MACHETE and Darshana. 
+The first is a multipath communication component that splits data, with Multipath TCP (MPTCP), among multiple physical paths on top of an overlay network, using when possible multiple Internet Service Providers (ISPs) through multihoming.
+The second is a route hijacking monitor, that uses a combination of detection mechanisms to alert the user that its data traffic is likely being intercepted. The end client uses this reactive middleware so that hijack alerts can trigger path changes, to protect the communication.
+
+For more information about PREMIUM and its components please read and cite ;) the following publications ([BibTeX file](doc/PREMIUM.bib)):
+
+Diogo Raposo, Miguel L. Pardal, Luis Rodrigues, Miguel Correia
+_MACHETE: Multi-path Communication for Cloud Security_
+IEEE International Symposium on Network Computing and Applications (NCA), 2016.
+
+Karan H. Balu, Miguel L. Pardal, Miguel Correia
+_DARSHANA: Detecting Route Hijacking For Communication Confidentiality_
+IEEE International Symposium on Network Computing and Applications (NCA), 2016.
+
+***
+
+More about PREMIUM and the SafeCloud project at http://www.safecloud-project.eu/
 
 ## Getting Started
 For this guide we will need 5 virtual machines to simulate 5 distributed components of MACHETE: a sender, a receiver, a multipath manager to store information about the network and two overlay nodes to forward traffic through different routes. The virtual machines will be executed in Virtual Box and they all use the following virtual disk.
@@ -127,6 +146,7 @@ $ bmon
 * **Isabel Costa** - *Development of the PREMIUM middleware*
 * **Diogo Raposo** - *Development of the [MACHETE](https://github.com/inesc-id/MACHETE) middleware*
 * **Karan Balu** - *Development of the [Darshana](https://github.com/inesc-id/darshana) middleware*
+* **David Matos** - *Development of the PREMIUM middleware*
 
 ## License
 
